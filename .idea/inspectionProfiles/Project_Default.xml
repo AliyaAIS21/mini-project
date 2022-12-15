@@ -1,0 +1,43 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="PyPep8NamingInspection" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <option name="ignoredErrors">
+        <list>
+          <option value="N803" />
+          <option value="N802" />
+          <option value="N801" />
+        </list>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="PyUnresolvedReferencesInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredIdentifiers">
+        <list>
+          <option value="PyQt5.QPixmap" />
+          <option value="glavnaya.setupUi" />
+          <option value="object.*" />
+          <option value="main.App.btn2" />
+          <option value="main.App.btn1" />
+          <option value="baza.Ui_MainWindow.show" />
+          <option value="baza.Ui_MainWindow.main" />
+          <option value="baza.base.setupUi" />
+          <option value="baza.Ui_MainWindow" />
+          <option value="baza.base.main" />
+          <option value="add.adds.messagebox" />
+          <option value="sqlite3.dbapi2.Connection.open" />
+          <option value="baza.delete_sqlite_record" />
+          <option value="PyQt5.QtWidgets.QCalendarWidget.text" />
+          <option value="copy.sql" />
+          <option value="copy.inf1.tableWidget" />
+          <option value="copy.inf1.textEdit" />
+          <option value="ccopy.inf.btn6" />
+          <option value="ccopy.inf.fon2" />
+          <option value="ccopy.inf.textEdit" />
+          <option value="ccopy.inf.tableWidget" />
+          <option value="copy.elem" />
+          <option value="PyQt5.QtWidgets.clicked.connect" />
+        </list>
+      </option>
+    </inspection_tool>
+  </profile>
+</component>
