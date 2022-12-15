@@ -148,10 +148,9 @@ class Example(QMainWindow):
 
     def run3(self):
         i = 0
-
         for item in self.jobs.selectedItems():
             sp = self.jobs.item(self.jobs.row(item)).text()
-            text = sp.split(" ")
+            text = sp.split("  ")
             d = text[0]
             ts = text[1]
             te = text[2]
@@ -166,11 +165,18 @@ class Example(QMainWindow):
             msg.setIcon(QMessageBox.Information)
             msg.exec_()
 
-        conn = sqlite3.connect("planirovshik.sqlite")
-        cur = conn.cursor()
-        cur.execute('''DELETE from Plan WHERE Data = ? AND Time_start = ? AND Time_end=? AND Job=?''',
-                (d, ts, te, j))
-        conn.commit()
+            #conn = sqlite3.connect("planirovshik.sqlite")
+            #cur = conn.cursor()
+            cur.execute('''DELETE from Plan WHERE Data = ? AND Time_start = ? AND Time_end=? AND Job=?''',
+            (d, ts, te, j))
+            conn.commit()
+
+            self.w=Example()
+            self.w.show()
+            self.hide()
+
+
+
 
     # def run2(self):
     ##i=0
@@ -192,8 +198,8 @@ class Example(QMainWindow):
 
 
     def run1(self):
-        conn = sqlite3.connect("planirovshik.sqlite")
-        cur = conn.cursor()
+        #conn = sqlite3.connect("planirovshik.sqlite")
+        #cur = conn.cursor()
 
         j = str(self.job.text())
         ts=str(self.time_start.text())
